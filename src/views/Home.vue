@@ -3,20 +3,47 @@
 </script>
 
 <template>
+		<!-- Modal -->
+    <div x-data="{ showModal : true }" >
+        <!-- Modal Background -->
+        <div x-show="showModal" class="fixed latar-modal text-gray-500 flex items-center justify-center overflow-hidden z-50 left-0 right-0 top-0 bottom-0" x-transition:enter="transition ease duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+            <!-- Modal -->
+            <div class="relative h-[100vh]">
+				<div class="flex flex-col items-center justify-center p-4">
+					<div class="text-center mt-12 lg:mt-5">
+						<p class="text-neutral-500 font-bold uppercase">Undangan Pernikahan</p>
+					</div>
+					<div class="text-center mt-6 mb-16 lg:mt-4 lg:mb-10">
+						<img class="" src="../assets/images/icon-modal.png" alt="">
+					</div>
+					<div class="text-center space-y-4">
+						<p class="text-neutral-500">kpd. Bpk/Ibu/Saudara/i</p>
+						<p class="text-2xl underline text-neutral-500 font-semibold">Rizky Aditya</p>
+						<p class="text-neutral-500">Anda telah diundang ke hari bahagia kami</p>
+					</div>
+					<div class="py-4">
+						<button class="bg-nude/90 rounded-lg px-4 py-2 text-white shadow-md " x-on:click="showModal = false">
+							Buka Undangan
+						</button>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
   <section id="top">
     <div class="relative antialiased">
       <!-- <img class="object-cover w-full lg:flex hidden" src="../assets/images/top.png" alt=""> -->
-	  <div class="w-full h-[100vh]">
+	  <div class="w-full h-[95vh] lg:h-[100vh]">
 		<!-- <img class="object-cover lg:object-center lg:h-[100vh] lg:scale-100 scale-125 w-full" src="../assets/images/1.png" alt=""> -->
 		<div class="pic-wrapper top-0">
 			<figure class="pic-1">
-				<img class="object-cover w-full h-[100vh] lg:object-center" src="../assets/images/1.png" alt="">
+				<img class="object-cover w-full h-[95vh] lg:h-[100vh] lg:object-center" src="../assets/images/1.png" alt="">
 			</figure>
 			<figure class="pic-2">
-				<img class="object-cover w-full h-[100vh] lg:object-[0%,30%]" src="../assets/images/2.png" alt="">
+				<img class="object-cover w-full h-[95vh] lg:h-[100vh] lg:object-[0%,30%]" src="../assets/images/2.png" alt="">
 			</figure>
 			<figure class="pic-3">
-				<img class="object-cover w-full h-[100vh] lg:object-[0%,30%]" src="../assets/images/3.png" alt="">
+				<img class="object-cover w-full h-[95vh] lg:h-[100vh] lg:object-[0%,30%]" src="../assets/images/3.png" alt="">
 			</figure>
 		</div>
 	  </div>
@@ -25,7 +52,7 @@
           <p class="text-base font-bold text-white/90 leading-normal text-center">WE INVITED YOU TO CELEBRATED <br> OUR WEDDING</p>
           <img class="w-32 text-white mt-5" src="../assets/images/Frame.png" alt="">
       </div>
-      <div class="absolute bottom-0 w-full pb-16 flex flex-col items-center z-10" data-aos="fade-up">
+      <div class="absolute bottom-0 w-full pb-24 flex flex-col items-center z-10" data-aos="fade-up">
           <p class="text-6xl text-white font-aladin">Syarah & Ifan</p>
           <p class="text-xs mt-4 uppercase text-white/80">12 FEBRUARI 2022</p>
       </div>
@@ -76,7 +103,7 @@
 			  <img class="w-full object-cover -mt-4 lg:hidden flex" src="../assets/images/wave-mobile.png" alt="">
 		  </div>
 		  <img class="lg:h-[30rem] object-cover w-full object-top" src="../assets/images/image2.png" alt="">
-		  <div class="absolute z-50 transform top-1/2 left-1/2 lg:w-1/2 w-full px-4 lg:px-0 text-xs lg:text-base -translate-x-1/2 -translate-y-1/2 text-center" >
+		  <div class="absolute z-10 transform top-1/2 left-1/2 lg:w-1/2 w-full px-4 lg:px-0 text-xs lg:text-base -translate-x-1/2 -translate-y-1/2 text-center" >
 			  <p class="text-white italic" data-aos="fade-up">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</p>
 			  <p class="mt-5 text-white italic font-semibold" data-aos="fade-up">Q.S. Ar-Rum:21</p>
 		  </div>
@@ -147,7 +174,7 @@
 		  </div>
 		  <img class="lg:h-[30rem] object-cover w-full lg:object-top lg:hidden" src="../assets/images/image3.png" alt="">
 		  <img class="object-cover w-full lg:object-top hidden lg:flex" src="../assets/images/image4.png" alt="">
-		  <div class="absolute z-50 transform top-[5%] lg:top-[10%] w-full text-center">
+		  <div class="absolute z-10 transform top-[5%] lg:top-[10%] w-full text-center">
 			<p class="text-center font-rancho text-4xl mb-5 text-white" data-aos="fade-down">Save the Date</p>
 			<div class="flex lg:justify-around flex-col lg:flex-row items-center mb-8">
 				<div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="500">
@@ -203,7 +230,7 @@
   </section>
   <section id="galery">
 	  <div class="container mx-auto px-5">
-		  <div class="py-16 lg:px-10">
+		  <div class="py-10 lg:px-10">
 				<div class="text-center mb-8" data-aos="zoom-in-up">
 					<p class="text-nude text-3xl font-rancho tracking-wide mb-2">Galeri Foto</p>
 					<p class="text-xs">Begitulah keajaiban fotografi, tidak hanya mengabadikan momen penting dalam hidup, tapi juga membekukan kenangan yang indah & diingat untuk selamanya.</p>
@@ -249,13 +276,16 @@
 						</div>
 						<p class="text-neutral-400 tracking-wide font-rancho text-3xl">Pesan & Kesan</p>
 					</div>
-					<div class="flex lg:justify-between flex-col lg:flex-row items-center lg:gap-x-8">
+					<div class="flex lg:justify-between flex-col lg:flex-row  lg:gap-x-8">
 						<div class="lg:w-1/2 w-full mb-4">
 							<div class="mb-4 flex flex-col">
 								<label for="ucapan" class="text-base text-formulir">Ucapan</label>
 								<textarea class="form-text-area bg-white border rounded transition ease-in-out w-full shadow-lg border-gray-400 focus:text-gray-700 focus:border-nude focus:outline-none" name="ucapan" id="" cols="10" rows="5" placeholder="Tulis ucapan anda disini"></textarea>
 							</div>
 							<a href="#" class="w-full inline-block text-center bg-nude text-white py-1 rounded hover:bg-nude/90">Kirim ucapan</a>
+							<div class="lg:pt-10 pt-4 text-center lg:text-left">
+								<p class="text-neutral-500">Jangan lupa untuk konfirmasi kehadiran Anda disini ya.</p>
+							</div>
 						</div>
 						<div class="lg:w-1/2 w-full">
 							<div class="lg:mb-6 mb-4 flex flex-col">
@@ -265,6 +295,17 @@
 							<div class="mb-4 flex flex-col">
 								<label for="nama" class="text-base text-formulir">Alamat</label>
 								<input placeholder="Tulis alamat anda disini" type="text" class="form-input bg-white border rounded transition ease-in-out w-full shadow-lg border-gray-400 focus:text-gray-700 focus:border-nude focus:outline-none">
+							</div>
+							<div class="flex items-center mb-4">
+								<div class="mr-5">
+									<input id="hadir" class="form-radio text-nude mr-2 outline-none focus:outline-none" name="kehadiran" value="hadir" type="radio">
+									<label for="hadir" class="text-neutral-500">Hadir</label>
+								</div>
+								<div>
+									<input id="tidak_hadir" class="form-radio text-nude mr-2 outline-none focus:outline-none" name="kehadiran" value="tidak_hadir" type="radio">
+									<label for="tidak_hadir" class="text-neutral-500">Tidak Hadir</label>
+								</div>
+
 							</div>
 							<a href="#" class="w-full inline-block text-center bg-nude text-white py-1 rounded hover:bg-nude/90">Konfirmasi Kehadiran</a>
 						</div>
@@ -297,5 +338,9 @@
    .latar2{
     background-image: url('../assets/images/Background-2.png');
     object-fit: cover;
+  }
+  .latar-modal{
+	  background-image: url('../assets/images/bg-modal.png');
+	  object-fit: cover;
   }
 </style>
