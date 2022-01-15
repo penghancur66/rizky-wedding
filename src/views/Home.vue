@@ -33,18 +33,22 @@
   <section id="top">
     <div class="relative antialiased">
       <!-- <img class="object-cover w-full lg:flex hidden" src="../assets/images/top.png" alt=""> -->
-	  <div class="w-full h-[95vh] lg:h-[100vh]">
+	  <div class="w-full h-[90vh] lg:h-[97vh]">
 		<!-- <img class="object-cover lg:object-center lg:h-[100vh] lg:scale-100 scale-125 w-full" src="../assets/images/1.png" alt=""> -->
 		<div class="pic-wrapper top-0">
 			<figure class="pic-1">
-				<img class="object-cover w-full h-[95vh] lg:h-[100vh] lg:object-center" src="../assets/images/1.png" alt="">
+				<img class="object-cover w-full h-[90vh] lg:h-[97vh] lg:object-center" src="../assets/images/1.png" alt="">
 			</figure>
 			<figure class="pic-2">
-				<img class="object-cover w-full h-[95vh] lg:h-[100vh] lg:object-[0%,30%]" src="../assets/images/2.png" alt="">
+				<img class="object-cover w-full h-[90vh] lg:h-[97vh] lg:object-[0%,30%]" src="../assets/images/2.png" alt="">
 			</figure>
 			<figure class="pic-3">
-				<img class="object-cover w-full h-[95vh] lg:h-[100vh] lg:object-[0%,30%]" src="../assets/images/3.png" alt="">
+				<img class="object-cover w-full h-[90vh] lg:h-[97vh] lg:object-[0%,30%]" src="../assets/images/3.png" alt="">
 			</figure>
+		</div>
+		<div class="absolute bottom-0">
+			  <img class="w-full object-cover hidden lg:flex" src="../assets/images/wave-akad-desktop.png" alt="">
+			  <img class="w-full object-cover -mb-1 lg:hidden flex" src="../assets/images/wave-akad-mobile.png" alt="">
 		</div>
 	  </div>
 	  
