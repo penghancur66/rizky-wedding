@@ -7,9 +7,9 @@
 		<!-- Modal -->
 		<div x-data="{ showModal : true }" >
 			<!-- Modal Background -->
-			<div x-show="showModal" class="fixed latar-modal text-gray-500 flex items-center justify-center overflow-hidden z-50 left-0 right-0 top-0 bottom-0" x-transition:enter="transition ease duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+			<div x-show="showModal" class="fixed latar-modal text-gray-500 flex items-center justify-center overflow-hidden z-50 inset-0" x-transition:enter="transition ease duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
 				<!-- Modal -->
-				<div class="relative h-[100vh]">
+				<div class="relative">
 					<div class="flex flex-col items-center justify-center p-4">
 						<div class="text-center mt-12 lg:mt-5">
 							<p class="text-neutral-500 font-bold uppercase">Undangan Pernikahan</p>
@@ -48,8 +48,8 @@
 					</figure>
 				</div>
 				<div class="absolute bottom-0">
-					<img class="w-full object-cover hidden lg:flex" src="../assets/images/wave-akad-desktop.png" alt="">
-					<img class="w-full object-cover -mb-1 lg:hidden flex" src="../assets/images/wave-akad-mobile.png" alt="">
+					<img class="w-screen object-cover hidden lg:flex" src="../assets/images/wave-akad-desktop.png" alt="">
+					<img class="w-screen object-cover -mb-1 lg:hidden flex" src="../assets/images/wave-akad-mobile.png" alt="">
 				</div>
 			</div>
 			
@@ -104,8 +104,8 @@
 	<section id="wave1" >
 		<div class="relative">
 			<div class="absolute top-0">
-				<img class="w-full object-cover -mt-4 hidden lg:flex" src="../assets/images/wave1.png" alt="">
-				<img class="w-full object-cover -mt-4 lg:hidden flex" src="../assets/images/wave-mobile.png" alt="">
+				<img class="w-screen object-cover -mt-4 hidden lg:flex" src="../assets/images/wave1.png" alt="">
+				<img class="w-screen object-cover -mt-4 lg:hidden flex" src="../assets/images/wave-mobile.png" alt="">
 			</div>
 			<img class="lg:h-[30rem] object-cover w-full object-top" src="../assets/images/image2.png" alt="">
 			<div class="absolute z-10 transform top-1/2 left-1/2 lg:w-1/2 w-full px-4 lg:px-0 text-xs lg:text-base -translate-x-1/2 -translate-y-1/2 text-center" >
@@ -113,8 +113,8 @@
 				<p class="mt-5 text-white italic font-semibold" data-aos="fade-up">Q.S. Ar-Rum:21</p>
 			</div>
 			<div class="absolute bottom-0">
-				<img class="w-full object-cover transform rotate-180 -mb-4 hidden lg:flex" src="../assets/images/wave1.png" alt="">
-				<img class="w-full object-cover transform rotate-180 -mb-4 flex lg:hidden" src="../assets/images/wave-mobile.png" alt="">
+				<img class="w-screen object-cover transform rotate-180 -mb-4 hidden lg:flex" src="../assets/images/wave1.png" alt="">
+				<img class="w-screen object-cover transform rotate-180 -mb-4 flex lg:hidden" src="../assets/images/wave-mobile.png" alt="">
 			</div>
 		</div>
 	</section>
@@ -174,8 +174,8 @@
 	<section id="wave1" >
 		<div class="relative">
 			<div class="absolute top-0">
-				<img class="w-full object-cover -mt-4 hidden lg:flex" src="../assets/images/wave1.png" alt="">
-				<img class="w-full object-cover -mt-4 lg:hidden flex" src="../assets/images/wave-mobile.png" alt="">
+				<img class="w-screen object-cover -mt-4 hidden lg:flex" src="../assets/images/wave1.png" alt="">
+				<img class="w-screen object-cover -mt-4 lg:hidden flex" src="../assets/images/wave-mobile.png" alt="">
 			</div>
 			<img class="lg:h-[30rem] object-cover w-full lg:object-top lg:hidden" src="../assets/images/image3.png" alt="">
 			<img class="object-cover w-full lg:object-top hidden lg:flex" src="../assets/images/image4.png" alt="">
@@ -228,8 +228,8 @@
 				</div>
 			</div>
 			<div class="absolute bottom-0">
-				<img class="w-full object-cover transform rotate-180 -mb-4 hidden lg:flex" src="../assets/images/wave1.png" alt="">
-				<img class="w-full object-cover transform rotate-180 -mb-4 flex lg:hidden" src="../assets/images/wave-mobile.png" alt="">
+				<img class="w-screen object-cover transform rotate-180 -mb-4 hidden lg:flex" src="../assets/images/wave1.png" alt="">
+				<img class="w-screen object-cover transform rotate-180 -mb-4 flex lg:hidden" src="../assets/images/wave-mobile.png" alt="">
 			</div>
 		</div>
 	</section>
