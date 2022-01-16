@@ -20,6 +20,10 @@ module.exports = {
         formulir: '#0A0A0A',
         latar: '#F4EDE4',
         company: '#C7A27D',
+        biruAccent: '#436A81',
+        biruPrimary: '#1C394D',
+        biruLight: '#DADEE0',
+        biruAccentLight: '#B2D0DF',
       }
     },
   },

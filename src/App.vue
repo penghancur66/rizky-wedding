@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="font-nunito bg-latar">
+  <div class="font-nunito">
     <main>
       <router-view />
     </main>
