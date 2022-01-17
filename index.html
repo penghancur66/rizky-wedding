@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./src/assets/css/smoothslides.theme.css">
     
   </head>
   <body>
@@ -32,6 +33,22 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.cjs.min.js"></script> -->
+    <script type="text/javascript" src="./src/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./src/assets/js/smoothslides-2.2.1.js"></script>
+    <script type="text/javascript">
+      $(window).load( function() {
+      $('#myslideshow1').smoothSlides({
+        matchImageSize: false,
+        effectDuration: 6000,
+        pagination: false,
+        navigation: false,
+        captions: false,
+        effect: 'zoomIn',
+        effectModifier: 1.2
+        /* no comma on last option */
+        });
+      });
+    </script>
     <script>
       AOS.init({
         duration: '1500',
