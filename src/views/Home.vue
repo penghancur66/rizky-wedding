@@ -184,7 +184,7 @@
 			</div>
 			<img class="lg:h-[30rem] object-cover w-full lg:object-top lg:hidden" src="../assets/images/image3.png" alt="">
 			<img class="object-cover w-full lg:object-top hidden lg:flex" src="../assets/images/image4.png" alt="">
-			<div class="absolute z-10 transform top-[5%] lg:top-[10%] w-full text-center">
+			<div class="absolute z-10 transform top-0 w-full h-full flex flex-col justify-center text-center">
 				<p class="text-center font-rancho text-4xl mb-5 text-white" data-aos="fade-down">Save the Date</p>
 				<div class="flex lg:justify-around flex-col lg:flex-row items-center mb-8">
 					<div class="flex flex-col items-center" data-aos="flip-right" data-aos-delay="500">
