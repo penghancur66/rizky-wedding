@@ -7,7 +7,7 @@
 		<!-- Modal -->
 		<div x-data="{ showModal : true }" >
 			<!-- Modal Background -->
-			<div x-show="showModal" class="fixed latar-modal bg-biruLight text-gray-500 flex items-center justify-center overflow-hidden z-50 inset-0" x-transition:enter="transition ease duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+			<div x-show="showModal" class="fixed latar-template-modal-blue bg-biruLight text-gray-500 flex items-center justify-center overflow-hidden z-50 inset-0" x-transition:enter="transition ease duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
 				<!-- Modal -->
 				<div class="relative">
 					<div class="flex flex-col items-center justify-center p-4">
@@ -15,7 +15,7 @@
 							<p class="text-neutral-500 font-bold uppercase">Undangan Pernikahan</p>
 						</div>
 						<div class="text-center mt-6 mb-16 lg:mt-4 lg:mb-10">
-							<img class="" src="../assets/images/icon-modal.png" alt="">
+							<img class="" src="../assets/images/icon-modal-blue.png" alt="">
 						</div>
 						<div class="text-center space-y-4">
 							<p class="text-neutral-500">kpd. Bpk/Ibu/Saudara/i</p>
@@ -33,19 +33,11 @@
 		</div>
 	<section id="top">
 		<div class="relative antialiased">
-		<!-- <img class="object-cover w-full lg:flex hidden" src="../assets/images/top.png" alt=""> -->
 			<div class="w-full h-[90vh] lg:h-[97vh]">
-				<!-- <img class="object-cover lg:object-center lg:h-[100vh] lg:scale-100 scale-125 w-full" src="../assets/images/1.png" alt=""> -->
-				<div class="pic-wrapper top-0">
-					<figure class="pic-1">
-						<img class="object-cover w-full h-[90vh] lg:h-[97vh] lg:object-center" src="../assets/images/1.png" alt="">
-					</figure>
-					<figure class="pic-2">
-						<img class="object-cover w-full h-[90vh] lg:h-[97vh] lg:object-[0%,30%]" src="../assets/images/2.png" alt="">
-					</figure>
-					<figure class="pic-3">
-						<img class="object-cover w-full h-[90vh] lg:h-[97vh] lg:object-[0%,30%]" src="../assets/images/3.png" alt="">
-					</figure>
+				<div class="absolute top-0 w-full h-full overflow-hidden smoothslides" id="myslideshow1">
+					<img class="" src="../assets/images/1.png" alt="">
+					<img class="obj-top-center" src="../assets/images/2.png" alt="">
+					<img class="obj-top-center" src="../assets/images/3.png" alt="">
 				</div>
 				<div class="absolute bottom-0">
 					<img class="w-screen object-cover -mb-1 hidden lg:flex" src="../assets/images/wave-resepsi-desktop.svg" alt="">
@@ -54,7 +46,7 @@
 			</div>
 		
 		<div class="absolute py-10 top-0 transform flex flex-col w-full  lg:h-[100vh] items-center z-10" data-aos="fade-up">
-			<p class="text-base font-bold text-white/90 leading-normal text-center">WE INVITED YOU TO CELEBRATED <br> OUR WEDDING</p>
+			<p class="text-base font-bold text-white leading-normal text-center">WE INVITED YOU TO CELEBRATED <br> OUR WEDDING</p>
 			<img class="w-32 text-white mt-5" src="../assets/images/Frame.png" alt="">
 		</div>
 		<div class="absolute bottom-0 w-full pb-24 flex flex-col items-center z-10" data-aos="fade-up">
@@ -64,7 +56,7 @@
 		</div>
 	</section>
 	<section id="open">
-		<div class="latar">
+		<div class="latar-template-blue">
 			<div class="container mx-auto px-5 relative">
 				<div class="pt-5 pb-10">
 				<div class="flex flex-col items-center py-6" data-aos="fade-up">
@@ -120,22 +112,22 @@
 	</section>
 
 	<section id="wave2">
-		<div class="latar2">
+		<div class="latar-template-blue">
 			<div class="container mx-auto px-5">
 				<div class="py-16">
 					<div class="flex flex-col items-center ">
 						<p class="text-center text-3xl font-rancho text-biruPrimary mb-5" data-aos="fade-down">Akad Pernikahan</p>
-						<div class="lg:w-2/3 bg-white border rounded-lg border-biruAccentLight pt-3 pb-2 px-2" data-aos="flip-left">
+						<div class="lg:w-2/3 bg-white border-2 rounded-lg border-biruAccentLight pt-3 pb-2 px-2" data-aos="flip-left">
 							<div class="flex flex-col lg:flex-row lg:justify-around items-center">
 								<div class="flex flex-col items-center space-y-4 lg:w-1/2 mb-5 lg:mb-0">
-									<p class="text-neutral-400 font-bold text-5xl">12</p>
-									<p class="text-neutral-400 text-xs">Febuari 2022</p>
-									<p class="text-neutral-400 text-xs">09.00 Wita -  Selesai</p>
+									<p class="text-neutral-700 font-bold text-5xl">12</p>
+									<p class="text-neutral-500 text-xs">Febuari 2022</p>
+									<p class="text-neutral-500 text-xs">09.00 Wita -  Selesai</p>
 								</div>
 								<div class="flex flex-col items-center space-y-4 lg:w-1/2">
-									<img class="w-12 h-12" src="../assets/images/ic_round-location-city.png" alt="">
-									<p class="text-neutral-400 font-semibold text-center">Harris Hotel & Residences Sunset Road - Bali</p>
-									<p class="text-neutral-400 text-xs text-center">Jl. Pura Mertasari, Jl. Sunset Road, Kuta, Bali</p>
+									<img class="w-12 h-12" src="../assets/images/blue_icon_city.svg" alt="">
+									<p class="text-neutral-500 font-semibold text-center">Harris Hotel & Residences Sunset Road - Bali</p>
+									<p class="text-neutral-500 text-xs text-center">Jl. Pura Mertasari, Jl. Sunset Road, Kuta, Bali</p>
 								</div>
 							</div>
 							<hr class="mt-3">
@@ -151,20 +143,20 @@
 					</div>
 					<div class="grid grid-cols-2 gap-y-4 lg:gap-y-0 lg:grid-cols-4">
 						<div class="flex flex-col items-center" data-aos="flip-right">
-							<img class="w-20 mb-2" src="../assets/images/mask.png" alt="">
-							<p class="text-neutral-400 text-xs">Memakai Masker</p>
+							<img class="w-20 mb-2" src="../assets/images/blue_masker.svg" alt="">
+							<p class="text-neutral-500 text-xs">Memakai Masker</p>
 						</div>
 						<div class="flex flex-col items-center" data-aos="flip-right">
-							<img class="w-20 mb-2" src="../assets/images/sanitizier.png" alt="">
-							<p class="text-neutral-400 text-xs">Memakai Hand Sanitizer</p>
+							<img class="w-20 mb-2" src="../assets/images/blue_sanitizer.svg" alt="">
+							<p class="text-neutral-500 text-xs">Memakai Hand Sanitizer</p>
 						</div>
 						<div class="flex flex-col items-center" data-aos="flip-right">
-							<img class="w-20 mb-2" src="../assets/images/wash.png" alt="">
-							<p class="text-neutral-400 text-xs">Mencuci Tangan</p>
+							<img class="w-20 mb-2" src="../assets/images/blue_wash.svg" alt="">
+							<p class="text-neutral-500 text-xs">Mencuci Tangan</p>
 						</div>
 						<div class="flex flex-col items-center" data-aos="flip-right">
-							<img class="w-20 mb-2" src="../assets/images/jagajarak.png" alt="">
-							<p class="text-neutral-400 text-xs">Menjaga Jarak</p>
+							<img class="w-20 mb-2" src="../assets/images/blue_jaga_jarak.svg" alt="">
+							<p class="text-neutral-500 text-xs">Menjaga Jarak</p>
 						</div>
 					</div>	
 				</div>
@@ -248,38 +240,12 @@
 						<img class="shadow-lg" src="../assets/images/galery5.png" alt="" data-aos="flip-right">
 						<img class="shadow-lg" src="../assets/images/galery6.png" alt="" data-aos="flip-right">
 					</div>
-					<!-- <div class="flex lg:hidden">
-					<div id="thumbnail-slider" class="splide">
-						<div class="splide__track">
-							<ul class="splide__list">
-								<li class="splide__slide">
-									<img src="../assets/images/galery1.png">
-								</li>
-								<li class="splide__slide">
-									<img src="../assets/images/galery2.png">
-								</li>
-								<li class="splide__slide">
-									<img src="../assets/images/galery3.png">
-								</li>
-								<li class="splide__slide">
-									<img src="../assets/images/galery4.png">
-								</li>
-								<li class="splide__slide">
-									<img src="../assets/images/galery5.png">
-								</li>
-								<li class="splide__slide">
-									<img src="../assets/images/galery6.png">
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div> -->
 					<div class="mt-10">
 						<div class="text-center mb-10">
 							<div class="flex justify-center">
 								<img class="mb-4" src="../assets/images/message-header.png" alt="">
 							</div>
-							<p class="text-neutral-400 tracking-wide font-rancho text-3xl">Pesan & Kesan</p>
+							<p class="text-biruPrimary tracking-wide font-rancho text-3xl">Pesan & Kesan</p>
 						</div>
 						<div class="flex lg:justify-between flex-col lg:flex-row  lg:gap-x-8">
 							<div class="lg:w-1/2 w-full mb-4">
@@ -320,33 +286,40 @@
 		</div>
 	</section>
 	<footer class="flex flex-col items-center py-2 bg-white">
-		<p class="text-company font-lato">Finitree Projects</p>
+		<p class="text-biruPrimary font-lato">Finitree Projects</p>
 		<div class="flex justify-center space-x-3 my-2">
 			<a class="w-8 h-8" href="#">
-				<img src="../assets/images/ic_wa.png" alt="">
+				<img src="../assets/images/ic_wa_blue.svg" alt="">
 			</a>
 			<a class="w-8 h-8" href="#">
-				<img src="../assets/images/ic_fb.png" alt="">
+				<img src="../assets/images/ic_fb_blue.svg" alt="">
 			</a>
 			<a class="w-8 h-8" href="#">
-				<img src="../assets/images/ic_ig.png" alt="">
+				<img src="../assets/images/ic_ig_blue.svg" alt="">
 			</a>
 		</div>
-		<p class="text-neutral-400 font-lato">2021 Finitree</p>
+		<p class="text-neutral-500 font-lato">2021 Finitree</p>
 	</footer>
   </div>
 </template>
 <style scoped>
-  .latar{
-    background-image: url('../assets/images/background-body-blue.png');
-    object-fit: cover;
+  .latar-template-blue{
+    background-image: url('../assets/images/blue_bg_modal_mobile.png');
+    object-fit: contain;
+	background-repeat: no-repeat;
   }
-   .latar2{
-    background-image: url('../assets/images/background-body-blue.png');
-    object-fit: cover;
+  .latar-template-modal-blue{
+	  background-image: url('../assets/images/blue_bg_modal_mobile.png');
+	  background-size: contain;
   }
-  .latar-modal{
+  @media only screen and (min-width: 768px) {
+	.latar-template-modal-blue{
 	  background-image: url('../assets/images/modal-blue.png');
-	  object-fit: cover;
-  }
+	  background-size: 100vw;
+	}
+	.latar-template-blue{
+		background-image: url('../assets/images/background-body-blue.png');
+		object-fit: cover;
+	}
+}
 </style>
