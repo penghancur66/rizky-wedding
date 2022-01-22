@@ -1,5 +1,46 @@
 <script setup>
-
+	const images = [
+		{
+			"id" : 1,
+			"image": "image1"
+		},
+		{
+			"id" : 2,
+			"image": "image2"
+		},
+		{
+			"id" : 3,
+			"image": "image1"
+		},
+		{
+			"id" : 4,
+			"image": "image2"
+		},
+		{
+			"id" : 5,
+			"image": "image1"
+		},
+		{
+			"id" : 6,
+			"image": "image2"
+		},
+		{
+			"id" : 7,
+			"image": "image1"
+		},
+		{
+			"id" : 8,
+			"image": "image2"
+		},
+		{
+			"id" : 9,
+			"image": "image1"
+		},
+		{
+			"id" : 10,
+			"image": "image2"
+		},
+	];
 </script>
 
 <template>
@@ -35,18 +76,7 @@
 		<div class="relative antialiased">
 			<!-- <img class="object-cover w-full lg:flex hidden" src="../assets/images/top.png" alt=""> -->
 			<div class="w-full h-[90vh] lg:h-[97vh]">
-				<!-- <img class="object-cover lg:object-center lg:h-[100vh] lg:scale-100 scale-125 w-full" src="../assets/images/1.png" alt=""> -->
-				<!-- <div class="pic-wrapper top-0">
-					<figure class="pic-1">
-						<img class="object-cover w-full h-full lg:object-center" src="../assets/images/1.png" alt="">
-					</figure>
-					<figure class="pic-2">
-						<img class="object-cover w-full h-full lg:object-[0%,30%]" src="../assets/images/2.png" alt="">
-					</figure>
-					<figure class="pic-3">
-						<img class="object-cover w-full h-full lg:object-[0%,30%]" src="../assets/images/3.png" alt="">
-					</figure>
-				</div> -->
+				
 				<div class="absolute top-0 w-full h-full overflow-hidden smoothslides" id="myslideshow1">
 					<img class="" src="../assets/images/1.png" alt="">
 					<img class="obj-top-center" src="../assets/images/2.png" alt="">
@@ -245,40 +275,11 @@
 						<p class="text-nude text-3xl font-rancho tracking-wide mb-2">Galeri Foto</p>
 						<p class="text-xs">Begitulah keajaiban fotografi, tidak hanya mengabadikan momen penting dalam hidup, tapi juga membekukan kenangan yang indah & diingat untuk selamanya.</p>
 					</div>
-					<div class="grid lg:grid-cols-3 grid-cols-1 gap-y-6 lg:gap-x-6">
-						<img class="shadow-lg" src="../assets/images/galery1.png" alt="" data-aos="flip-right">
-						<img class="shadow-lg" src="../assets/images/galery2.png" alt="" data-aos="flip-right">
-						<img class="shadow-lg" src="../assets/images/galery3.png" alt="" data-aos="flip-right">
-						<img class="shadow-lg" src="../assets/images/galery4.png" alt="" data-aos="flip-right">
-						<img class="shadow-lg" src="../assets/images/galery5.png" alt="" data-aos="flip-right">
-						<img class="shadow-lg" src="../assets/images/galery6.png" alt="" data-aos="flip-right">
-					</div>
-					<!-- <div class="flex lg:hidden">
-					<div id="thumbnail-slider" class="splide">
-						<div class="splide__track">
-							<ul class="splide__list">
-								<li class="splide__slide">
-									<img src="../assets/images/galery1.png">
-								</li>
-								<li class="splide__slide">
-									<img src="../assets/images/galery2.png">
-								</li>
-								<li class="splide__slide">
-									<img src="../assets/images/galery3.png">
-								</li>
-								<li class="splide__slide">
-									<img src="../assets/images/galery4.png">
-								</li>
-								<li class="splide__slide">
-									<img src="../assets/images/galery5.png">
-								</li>
-								<li class="splide__slide">
-									<img src="../assets/images/galery6.png">
-								</li>
-							</ul>
+					<div class="grid grid-cols-3 gap-4" >
+						<div :class="image.id == 1 || image.id == 5 || image.id == 9 ? 'col-span-3' : '' " v-for="image in images" :key="image.id">
+							<img class="shadow-lg object-cover" src="../assets/images/galery1.png" alt="" data-aos="flip-right">
 						</div>
 					</div>
-				</div> -->
 					<div class="mt-10">
 						<div class="text-center mb-10">
 							<div class="flex justify-center">
